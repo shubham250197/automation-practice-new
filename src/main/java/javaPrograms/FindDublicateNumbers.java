@@ -1,16 +1,16 @@
 package javaPrograms;
 
+import io.cucumber.java.sl.In;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class DuplicateCharacter {
+public class FindDublicateNumbers {
     public static void main(String[] args){
-        String name = "Namename Shubhshubham";
-      String name1 =   name.toLowerCase();
-      name1.split(" ");
-     char[] nameArr = name1.toCharArray();
-        Map<Character,Integer>map=new HashMap<>();
-        for (char key :nameArr){
+        int[] num = {1,1,2,4,5,7,7,3};
+       int numLength =  num.length;
+        Map<Integer,Integer>map=new HashMap<>();
+        for (int key :num){
             if (map.containsKey(key)){
                 map.put(key,map.get(key)+1);
             }
@@ -18,10 +18,11 @@ public class DuplicateCharacter {
                 map.put(key,1);
             }
         }
-        for (Map.Entry<Character,Integer> entry:map.entrySet()){
+        for (Map.Entry<Integer,Integer>entry:map.entrySet()){
             if (entry.getValue()>1){
                 System.out.println(entry.getKey()+" = "+entry.getValue());
             }
         }
     }
+
 }
