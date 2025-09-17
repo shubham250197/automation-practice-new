@@ -1,7 +1,7 @@
 package javaPrograms;
 
 public class DuplicateCharacter {
-    public void myMethod(){
+    public void findDuplicateCharacters(){
         System.out.println("8irkijkgikg");
     }
 }
