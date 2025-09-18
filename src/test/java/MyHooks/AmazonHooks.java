@@ -34,7 +34,7 @@ public class AmazonHooks {
     }
 
 
-    /*@After(order = 0)
+    @After(order = 0)
     public void quitBrowser(Scenario scenario) {
         if (scenario.isFailed()) {
             //take screenshot
@@ -43,8 +43,9 @@ public class AmazonHooks {
             scenario.attach(sourcePath, "image/png", scenarioName);
         }
         System.out.println(" Before 3 st done!!!!!!!!!!!");
-        driver.quit();*/
+        driver.quit();
 
     }
+}
 
 
