@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdeff","MyHooks"},
         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
-        tags = "@radioButton2")
+        tags = "@Login")
 public class TestRunner {
 
 
