@@ -40,7 +40,8 @@ public class LoginPage extends CommonMethods {
 
 
 
-    public void clickOnSubmitButton(){
+    public void clickOnSubmitButton()
+    {
        driver.findElement(loginCta).click();
     }
     public String userIsOnHomePage(){
