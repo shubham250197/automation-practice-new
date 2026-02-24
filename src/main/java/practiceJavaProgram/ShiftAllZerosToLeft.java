@@ -1,16 +1,15 @@
-package javaPrograms;
+package practiceJavaProgram;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-public class ShiftZerosToRight {
+public class ShiftAllZerosToLeft {
     public static void main(String[] args){
         int[] num = {1,0,1,0,1,0};
         int zeros=0;
-       int length = num.length;
-       List<Integer>list = new ArrayList<>();
-       for (int i =0;i<length;i++){
+       int numLength = num.length;
+        List<Integer>list=new ArrayList<>();
+       for (int i=0;i<numLength;i++){
            if (num[i]!=0){
                list.add(num[i]);
            }
@@ -18,9 +17,10 @@ public class ShiftZerosToRight {
                zeros++;
            }
        }
-       for (int i =0;i<zeros;i++){
+       for (int i=0;i<zeros;i++){
            list.add(0,0);
        }
         System.out.println(list);
-}
+    }
+
 }

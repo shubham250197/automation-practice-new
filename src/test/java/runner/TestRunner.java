@@ -10,8 +10,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdeff","MyHooks"},
         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
-        tags = "@Login")
+        tags = "@APITestcases")
 public class TestRunner {
-
 
 }

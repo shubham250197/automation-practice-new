@@ -12,7 +12,8 @@ public class DropDownPage {
 
     WebDriver driver;
     public DropDownPage(WebDriver driver){
-      this.driver = driver;
+
+        this.driver = driver;
     }
 
     public void userSelectSecondoption(String option){
